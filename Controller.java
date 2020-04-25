@@ -307,24 +307,28 @@ public class Controller implements Initializable {
                 createDatabase(AWS_URL);
             }
         });
+        
         loadstudentbutton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
                 loadData(AWS_URL);
             }
         });
+        
         filterbyage.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
                 sortbyage(AWS_URL);
             }
         });
+        
         filterbyname.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
                 sortbyname(AWS_URL);
             }
         });
+        
         filterbygpa.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
