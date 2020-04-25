@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="center" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <VBox>
+        <HBox>
+            <VBox>
+                <JFXButton fx:id="createstudentbutton" prefWidth="150" text="CREATE Student DB" />
+                <JFXButton fx:id="loadstudentbutton" prefWidth="150" text="POPULATE Student Table" />
+                <HBox alignment="TOP_CENTER" prefHeight="20.0" prefWidth="89.0">
+                    <JFXButton fx:id="filterbyage" prefWidth="150" text="Sort by Age > 25" />
+                    <JFXButton fx:id="filterbyname" prefWidth="150" text="Sort by name with m" />
+                    <JFXButton fx:id="filterbygpa" prefWidth="150" text="Sort Age high to low" />
+                </HBox>
+                <JFXListView fx:id="firstTableView" prefHeight="305.0" prefWidth="2072.0"></JFXListView>
+            </VBox>
+        </HBox>
+    </VBox>
+</HBox>
